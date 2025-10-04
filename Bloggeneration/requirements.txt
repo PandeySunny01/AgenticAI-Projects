@@ -6,3 +6,4 @@ langchain_openai
 langchain_groq
 faiss-cpu
 streamlit
+graphviz
