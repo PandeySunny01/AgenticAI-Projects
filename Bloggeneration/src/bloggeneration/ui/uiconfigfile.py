@@ -32,16 +32,17 @@ class Config:
         if type(self.config["DEFAULT"].get("BLOG_TOPIC"))==None:
             return self.config["DEFAULT"].get("BLOG_TOPIC")
         else:
-            return self.config["DEFAULT"].get("BLOG_TOPIC").split(", ")  
+            return self.config["DEFAULT"].get("BLOG_TOPIC")
+            #return self.config["DEFAULT"].get("BLOG_TOPIC").split(", ")  
     
     def get_llm_option(self):
         if type(self.config["DEFAULT"].get("LLM_OPTIONS"))==None:
             return self.config["DEFAULT"].get("LLM_OPTIONS")
         else:
-            return self.config["DEFAULT"].get("LLM_OPTIONS").split(", ")    
+            return self.config["DEFAULT"].get("LLM_OPTIONS")  
         
     def get_groqmodel_option(self):
         if type(self.config["DEFAULT"].get("GROQ_MODEL_OPTIONS"))==None:
             return self.config["DEFAULT"].get("GROQ_MODEL_OPTIONS")
         else:
-            return self.config["DEFAULT"].get("GROQ_MODEL_OPTIONS").split(", ")  
+            return self.config["DEFAULT"].get("GROQ_MODEL_OPTIONS") 
